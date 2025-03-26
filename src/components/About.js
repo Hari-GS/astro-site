@@ -37,7 +37,7 @@ function About() {
 
 
   return (
-    <div className="bg-[#070022] text-white py-0 px-6 md:px-20 flex flex-col md:flex-col items-center justify-between">
+    <div id="about" className="bg-[#070022] text-white py-0 px-6 md:px-20 flex flex-col md:flex-col items-center justify-between">
       <div className="flex flex-row pt-20 justify-evenly">
           {/* Left Content */}
           <div className="md:w-1/2 text-center md:text-left">

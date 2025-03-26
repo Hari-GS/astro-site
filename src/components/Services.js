@@ -5,13 +5,13 @@ import tellerPic from "../assets/front-view-fortune-teller-with-client.png"
 
 const Services = () => {
   return (
-    <div className="bg-[#070022] text-white pt-24">
+    <div  className="bg-[#070022] text-white pt-24">
       {/* Banner Image Placeholder */}
       <div className="w-full h-60 bg-gray-700 flex items-center justify-center my-24">
         <img src={skyImage} alt="sky-image"/>
       </div>
       
-      <div className="p-12 px-24">
+      <div id="services" className="p-12 px-24">
         <h2 className="text-lime-300 text-2xl mb-6">Our Service:</h2>
         <div className="flex flex-col md:flex-row gap-8 justify-evenly">
           {/* Left Side - Image Placeholder */}
@@ -39,9 +39,9 @@ const Services = () => {
         </div>
       </div>
       <div className="text-white p-8 flex flex-col items-center">
-      <button className="bg-[#C4E15A] text-black py-2 px-6 rounded-lg text-lg mb-6 hover:bg-[#afd81c]">
+      {/* <button className="bg-[#C4E15A] text-black py-2 px-6 rounded-lg text-lg mb-6 hover:bg-[#afd81c]">
         View All Service
-      </button>
+      </button> */}
 
       <div className="w-full self-start pl-[17%] mt-4">
         <h5 className="text-[#C4E15A] text-sm font-semibold text-left">Why Choose Us</h5>

@@ -5,13 +5,13 @@ import Services from '../components/Services'
 import WhyChooseUs from '../components/WhyChooseUs'
 import Footer from '../components/Footer'
 
-function Home() {
+function Home({ setIsPopupOpen }) {
     return (
         <div>
            <Hero/>
            <About/>
            <Services/>
-           <WhyChooseUs/>
+           <WhyChooseUs setIsPopupOpen={setIsPopupOpen}/>
            <Footer/>
         </div>
     )

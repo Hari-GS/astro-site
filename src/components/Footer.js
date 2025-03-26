@@ -1,5 +1,6 @@
 import React from 'react'
 import logo from '../assets/Group 32.png';
+import { handleScroll } from './Navbar';
 
 function Footer() {
     return (
@@ -12,10 +13,9 @@ function Footer() {
       <div className="text-left pt-8">
         <h3 className="text-lg font-semibold text-[#C4E15A]">Company</h3>
         <ul className="text-sm mt-2">
-          <li>About us</li>
-          <li>Services</li>
-          <li>Horoscope</li>
-          <li>Chapter List</li>
+          <li><button className='hover:text-gray-400' onClick={() => handleScroll("home")}>Home</button></li>
+          <li><button className='hover:text-gray-400' onClick={() => handleScroll("about")}>About us</button></li>
+          <li><button className='hover:text-gray-400' onClick={() => handleScroll("services")}>Services</button></li>
         </ul>
       </div>
       

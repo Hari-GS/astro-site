@@ -4,7 +4,7 @@ import premiumStar from "../assets/Icons/star.png"
 import careImg from "../assets/Icons/care.png"
 import lockImg from "../assets/Icons/lock.png"
 
-function WhyChooseUs() {
+function WhyChooseUs({ setIsPopupOpen }) {
     return (
         <div className="bg-[#070022] text-white p-24">
       {/* Membership Banner */}
@@ -15,7 +15,7 @@ function WhyChooseUs() {
       }}>
         <h2 className="text-2xl font-bold">Join our membership for daily bits of astrology</h2>
         <p className="mt-2 text-gray-300">We provide the essentials for your astrology needs</p>
-        <button className="mt-4 bg-[#C4E15A] text-black py-2 px-6 rounded-lg text-lg hover:bg-[#afd81c]">
+        <button onClick={() => setIsPopupOpen(true)} className="mt-4 bg-[#C4E15A] text-black py-2 px-6 rounded-lg text-lg hover:bg-[#afd81c]">
           Join Membership
         </button>
       </div>

@@ -4,7 +4,7 @@ import handPic from "../assets/image 7.png";
 
 function Hero() {
   return (
-    <div
+    <section
       className="relative h-screen flex items-center justify-center text-white"
       style={{
         backgroundImage: `linear-gradient(to bottom, #070022 10%, rgba(7, 0, 34, 0.9) 30%, rgba(7, 0, 34, 0.8) 50%, rgba(7, 0, 34, 0.9) 80%, #070022 100%), url(${heroImage})`,
@@ -19,7 +19,7 @@ function Hero() {
         </h1>
         <img src={handPic} className="h-[350px] mt-6 md:mt-8" alt="Hand illustration"/>
       </div>
-    </div>
+    </section>
   );
 }
 
