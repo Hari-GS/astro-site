@@ -15,10 +15,10 @@ function Navbar({ setIsPopupOpen }) {
     return (
         <>
             {/* Navbar */}
-            <div className="bg-[#070022] text-white px-8 py-4 flex items-center justify-between w-full top-0 z-50">
+            <div className="bg-[#070022] text-white md:px-8 px-4 py-4 flex items-center justify-between w-full top-0 z-50">
                 {/* Logo */}
                 <div>
-                    <img src={logo} alt="logo" className="md:h-[100px] h-[80px]" />
+                    <img src={logo} alt="logo" className="md:h-[100px] h-[90px]" />
                 </div>
 
                 {/* Desktop Navigation */}

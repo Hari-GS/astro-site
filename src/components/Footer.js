@@ -14,7 +14,7 @@ function Footer() {
 
         {/* Company Links */}
         <div className="text-center md:text-left">
-          <h3 className="text-lg font-semibold text-[#C4E15A]">Company</h3>
+          <h3 className="text-lg font-semibold text-[#C4E15A]">Quick Links</h3>
           <ul className="text-sm mt-2 space-y-1">
             <li>
               <button className="hover:text-gray-400" onClick={() => handleScroll("home")}>
