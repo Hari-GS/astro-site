@@ -1,6 +1,6 @@
 import React from "react";
 import skyImage from "../assets/starry-sky-2533009.jpg";
-import handPic from "../assets/image 7.jpg";
+import handPic from "../assets/image 7 e-Photoroom.png";
 import tellerPic from "../assets/front-view-fortune-teller-with-client.jpg";
 
 const Services = () => {

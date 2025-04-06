@@ -1,6 +1,6 @@
 import React from "react";
 import heroImage from "../assets/numerology-concept-composition.jpg"; // Replace with your actual image path
-import handPic from "../assets/image 7.jpg";
+import handPic from "../assets/image 7 e-Photoroom.png";
 
 function Hero() {
   return (
