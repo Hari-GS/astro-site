@@ -54,7 +54,11 @@ function About() {
       <div className="text-white flex flex-col items-center pt-10 md:pt-20 px-2 w-full">
         <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-6">
           {zodiacSigns.map((src, index) => (
-            <div key={index} className="relative flex justify-center items-center w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 rounded-lg overflow-hidden shadow-lg border-2 border-blue-500">
+            <div key={index} className="relative flex justify-center items-center w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 rounded-lg overflow-hidden shadow-lg border-2 border-blue-800"
+            style={{
+                boxShadow: "0 4px 15px rgba(108, 99, 255, 0.5)",
+              }}
+            >
               <img src={src} alt={`Zodiac ${index + 1}`} className="w-full h-full object-cover" />
             </div>
           ))}
@@ -75,7 +79,11 @@ function About() {
       <div className="mt-16 flex items-center justify-center w-full">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-6xl w-full px-4">
           {features.map((feature, index) => (
-            <div key={index} className="bg-[#0D0F2B] text-white p-6 rounded-2xl shadow-lg border border-white text-center transition-transform transform hover:scale-105">
+            <div key={index} className="bg-[#0D0F2B] text-white p-6 rounded-2xl shadow-lg border border-white text-center transition-transform transform"
+            style={{
+                boxShadow: "0 4px 15px rgba(108, 99, 255, 0.5)",
+              }}
+            >
               <h3 className="text-lg font-semibold">{feature.title}</h3>
               <p className="text-sm text-gray-300 mt-2">{feature.description}</p>
             </div>

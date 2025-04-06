@@ -9,7 +9,7 @@ function Footer() {
         {/* Logo & Tagline */}
         <div className="text-center md:text-left">
           <img src={logo} alt="logo" className="h-[80px] md:h-[100px] mx-auto md:mx-0" />
-          <p className="text-sm mt-2">We help you explore your cosmic path</p>
+          <p className="text-sm md:mt-0 mt-2">We help you explore your cosmic path</p>
         </div>
 
         {/* Company Links */}
