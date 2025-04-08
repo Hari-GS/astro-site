@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import logo from '../assets/Group 32.png';
+import { Link, useLocation } from 'react-router-dom';
 
 export const handleScroll = (id) => {
     const section = document.getElementById(id);
@@ -11,6 +12,9 @@ export const handleScroll = (id) => {
 
 function Navbar({ setIsPopupOpen }) {
     const [isOpen, setIsOpen] = useState(false);
+    const location = useLocation();
+    const isMoreAboutPage = location.pathname === "/more-about";
+
 
     return (
         <>
@@ -23,15 +27,31 @@ function Navbar({ setIsPopupOpen }) {
 
                 {/* Desktop Navigation */}
                 <div className="hidden md:flex items-center space-x-8">
-                    <button onClick={() => handleScroll("home")} className="hover:text-gray-400">Home</button>
-                    <button onClick={() => handleScroll("about")} className="hover:text-gray-400">About us</button>
-                    <button onClick={() => handleScroll("services")} className="hover:text-gray-400">Services</button>
-                    <button
-                        onClick={() => setIsPopupOpen(true)}
-                        className="bg-yellow-400 text-black px-4 py-2 rounded-lg font-semibold hover:bg-yellow-500 transition"
-                    >
-                        Reservation
-                    </button>
+                    {!isMoreAboutPage ? (
+                        <>
+                            <button onClick={() => handleScroll("home")} className="hover:text-gray-400">Home</button>
+                            <button onClick={() => handleScroll("about")} className="hover:text-gray-400">About us</button>
+                            <Link to="/more-about" className="hover:text-gray-400">Learn More</Link>
+                            <button
+                                onClick={() => setIsPopupOpen(true)}
+                                className="bg-yellow-400 text-black px-4 py-2 rounded-lg font-semibold hover:bg-yellow-500 transition"
+                            >
+                                Reservation
+                            </button>
+                        </>
+                    ) : (
+                        <>
+                        <Link to="/" className="hover:text-gray-400 border border-white px-4 py-2 rounded-md">
+                            Back
+                        </Link>
+                        <button
+                                onClick={() => setIsPopupOpen(true)}
+                                className="bg-yellow-400 text-black px-4 py-2 rounded-lg font-semibold hover:bg-yellow-500 transition"
+                            >
+                                Reservation
+                            </button>
+                        </>
+                    )}
                 </div>
 
                 {/* Mobile Menu Icon */}
@@ -50,15 +70,35 @@ function Navbar({ setIsPopupOpen }) {
 
                     {/* Navigation Links */}
                     <nav className="flex flex-col space-y-6 text-white text-lg">
-                        <button onClick={() => { handleScroll("home"); setIsOpen(false); }} className="hover:text-gray-400">Home</button>
-                        <button onClick={() => { handleScroll("about"); setIsOpen(false); }} className="hover:text-gray-400">About us</button>
-                        <button onClick={() => { handleScroll("services"); setIsOpen(false); }} className="hover:text-gray-400">Services</button>
-                        <button
-                            onClick={() => { setIsPopupOpen(true); setIsOpen(false); }}
-                            className="bg-yellow-400 text-black px-4 py-2 rounded-lg font-semibold hover:bg-yellow-500 transition"
-                        >
-                            Reservation
-                        </button>
+                        {!isMoreAboutPage ? (
+                            <>
+                                <button onClick={() => { handleScroll("home"); setIsOpen(false); }} className="hover:text-gray-400">Home</button>
+                                <button onClick={() => { handleScroll("about"); setIsOpen(false); }} className="hover:text-gray-400">About us</button>
+                                <button><Link to="/more-about" onClick={() => setIsOpen(false)} className="hover:text-gray-400">Learn More</Link></button>
+                                <button
+                                    onClick={() => { setIsPopupOpen(true); setIsOpen(false); }}
+                                    className="bg-yellow-400 text-black px-4 py-2 rounded-lg font-semibold hover:bg-yellow-500 transition"
+                                >
+                                    Reservation
+                                </button>
+                            </>
+                        ) : (
+                            <>
+                            <Link
+                                to="/"
+                                className="hover:text-gray-400 border border-white px-4 py-2 rounded-md"
+                                onClick={() => setIsOpen(false)}
+                            >
+                                Back
+                            </Link>
+                            <button
+                                    onClick={() => { setIsPopupOpen(true); setIsOpen(false); }}
+                                    className="bg-yellow-400 text-black px-4 py-2 rounded-lg font-semibold hover:bg-yellow-500 transition"
+                                >
+                                    Reservation
+                            </button>
+                            </>
+                        )}
                     </nav>
                 </div>
             </div>
