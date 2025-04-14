@@ -14,7 +14,7 @@ function Hero() {
     >
       {/* Content Wrapper - Adjusted Closer to Navbar */}
       <div className="relative flex flex-col items-center text-center px-4 mt-[-120px] md:mt-[-150px]">
-        <h1 className="text-xl font-bold md:text-6xl">
+        <h1 className="text-2xl font-bold md:text-6xl">
           Unlock Your Destiny With <br /> Expert Guidance
         </h1>
         <img src={handPic} className="md:h-[350px] h-[250px] mt-10 md:mt-8" alt="Hand illustration"/>

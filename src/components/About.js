@@ -38,21 +38,21 @@ function About() {
         {/* Left Content */}
         <div className="md:w-1/2 text-center md:text-left">
           <h2 className="text-2xl md:text-4xl font-bold text-[#D2E27F]">
-            India’s No. 1 Original Nadi Astrology
+            India’s No. 1 Original Naadi Astrology
           </h2>
           <p className="mt-4 text-sm md:text-lg leading-relaxed">
-            Agathiyar Nadi is a specialized branch of Indian astrology that interprets ancient scriptures to provide profound insights into an individual’s life. Our online Nadi astrology services offer precise guidance through Palm Leaf readings rooted in the revered traditions of Vaitheeswaran Koil Nadi Astrology.
+            Agathiyar Naadi is a specialized branch of Indian astrology that interprets ancient scriptures to provide profound insights into an individual’s life. Our online Naadi astrology services offer precise guidance through Palm Leaf readings rooted in the revered traditions of Vaitheeswaran Koil Naadi Astrology.
           </p>
         </div>
         {/* Right Image */}
         <div className="w-[200px] md:w-[300px]">
-          <img src={sageImage} alt="Nadi Astrology Sage" className="w-full max-w-sm md:max-w-full h-auto rounded-lg border-2 border-[#6474FF] shadow-lg" />
+          <img src={sageImage} alt="Naadi Astrology Sage" className="w-full max-w-sm md:max-w-full h-auto rounded-lg border-2 border-[#6474FF] shadow-lg" />
         </div>
       </div>
 
       {/* Zodiac Signs */}
       <div className="text-white flex flex-col items-center pt-10 md:pt-20 px-2 w-full">
-        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-6">
+        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-14">
           {zodiacSigns.map((src, index) => (
             <div key={index} className="relative flex justify-center items-center w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 rounded-lg overflow-hidden shadow-lg border-2 border-blue-800"
             style={{
