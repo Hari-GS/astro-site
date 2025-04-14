@@ -36,7 +36,7 @@ const Services = () => {
     {/* Service List */}
     <div className="flex-1 space-y-4">
       {[
-        "NADI ASTROLOGY",
+        "NAADI ASTROLOGY",
         "OUR HERITAGE",
         "NAADI ASTROLOGICAL METHODS",
         "SIVA NAADI ASTROLOGY",

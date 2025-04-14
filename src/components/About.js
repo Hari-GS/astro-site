@@ -41,7 +41,7 @@ function About() {
             India’s No. 1 Original Naadi Astrology
           </h2>
           <p className="mt-4 text-sm md:text-lg leading-relaxed">
-            Agathiyar Naadi is a specialized branch of Indian astrology that interprets ancient scriptures to provide profound insights into an individual’s life. Our online Naadi astrology services offer precise guidance through Palm Leaf readings rooted in the revered traditions of Vaitheeswaran Koil Naadi Astrology.
+            Agasthiyar Naadi is a specialized branch of Indian astrology that interprets ancient scriptures to provide profound insights into an individual’s life. Our online Naadi astrology services offer precise guidance through Palm Leaf readings rooted in the revered traditions of Vaitheeswaran Koil Naadi Astrology.
           </p>
         </div>
         {/* Right Image */}
