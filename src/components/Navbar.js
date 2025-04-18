@@ -30,7 +30,6 @@ function Navbar({ setIsPopupOpen }) {
                     {!isMoreAboutPage ? (
                         <>
                             <button onClick={() => handleScroll("home")} className="hover:text-gray-400">Home</button>
-                            <button onClick={() => handleScroll("about")} className="hover:text-gray-400">About us</button>
                             <Link to="/more-about" className="hover:text-gray-400">Learn More</Link>
                             <button
                                 onClick={() => setIsPopupOpen(true)}
@@ -73,7 +72,6 @@ function Navbar({ setIsPopupOpen }) {
                         {!isMoreAboutPage ? (
                             <>
                                 <button onClick={() => { handleScroll("home"); setIsOpen(false); }} className="hover:text-gray-400">Home</button>
-                                <button onClick={() => { handleScroll("about"); setIsOpen(false); }} className="hover:text-gray-400">About us</button>
                                 <button><Link to="/more-about" onClick={() => setIsOpen(false)} className="hover:text-gray-400">Learn More</Link></button>
                                 <button
                                     onClick={() => { setIsPopupOpen(true); setIsOpen(false); }}

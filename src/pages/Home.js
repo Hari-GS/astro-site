@@ -8,11 +8,11 @@ import Footer from '../components/Footer'
 function Home({ setIsPopupOpen }) {
     return (
         <div>
-           <Hero/>
+           <Hero setIsPopupOpen={setIsPopupOpen}/>
            <About/>
            <Services/>
            <WhyChooseUs setIsPopupOpen={setIsPopupOpen}/>
-           <Footer/>
+           <Footer setIsPopupOpen={setIsPopupOpen}/>
         </div>
     )
 }

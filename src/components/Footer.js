@@ -4,7 +4,7 @@ import { handleScroll } from "./Navbar";
 import { Link } from "react-router-dom";
 import { FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 
-function Footer() {
+function Footer({setIsPopupOpen}) {
   return (
     <footer className="bg-[#070022] w-full text-gray-300 border-t border-white pt-8 pb-12 px-4 md:px-12">
       <div className="flex flex-col md:flex-row max-w-screen-lg mx-auto md:gap-8 gap-12">
@@ -40,8 +40,8 @@ function Footer() {
               </button>
             </li>
             <li>
-              <button className="hover:text-gray-400" onClick={() => handleScroll("about")}>
-                About Us
+              <button className="hover:text-gray-400" onClick={() => setIsPopupOpen(true)}>
+                Book You Session
               </button>
             </li>
             <li>

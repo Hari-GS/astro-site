@@ -27,10 +27,11 @@ const Services = () => {
       {/* Learn More Button */}
       <Link
         to="/more-about"
-        className="bg-gradient-to-r from-blue-500 to-purple-500 text-white px-4 py-2 rounded-md shadow-md hover:opacity-90 transition duration-300 text-sm md:text-base ml-0 md:ml-24 md:my-0 my-4"
+        className="bg-gradient-to-r from-blue-500 to-purple-500 text-white px-4 py-2 rounded-md shadow-md text-sm md:text-base ml-0 md:ml-24 md:my-0 my-4 transition-transform duration-500 ease-in-out transform hover:scale-110"
       >
         Learn More
       </Link>
+
     </div>
 
     {/* Service List */}
@@ -100,7 +101,7 @@ const Services = () => {
           ].map((item, index) => (
             <div
               key={index}
-              className="bg-[#0D0F2B] p-4 md:p-6 rounded-lg w-full md:w-80 text-center border border-white"
+              className="bg-[#0D0F2B] p-4 md:p-6 rounded-lg w-full md:w-80 text-center border border-white transform transition-transform duration-300 hover:scale-105"
               style={{
                 boxShadow: "0 4px 15px rgba(108, 99, 255, 0.5)",
               }}

@@ -32,7 +32,7 @@ function WhyChooseUs({ setIsPopupOpen }) {
 
       {/* Why Choose Us Section */}
       <div className="mt-24 text-center max-w-screen-lg mx-auto">
-        <h2 className="text-lg md:text-xl font-bold">Why choose ASTRO POINT</h2>
+        <h2 className="text-lg md:text-xl font-bold">Why choose Us?</h2>
 
         <div className="mt-2 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {/* Great Experience */}
