@@ -152,7 +152,7 @@ const ContactPopup = ({ isOpen, onClose }) => {
             />
 
             <label className="text-sm mt-1 text-yellow-300 font-medium">
-              Upload Palm Image: <br />
+              Upload Your Palm Image: <br />
               <span className="text-xs text-gray-300">
                 📌 Right hand for men, Left hand for women. Max 10MB.
               </span>

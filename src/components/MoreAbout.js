@@ -8,7 +8,7 @@ const MoreAbout = () => {
       
 
   return (
-    <section className="px-4 md:px-24 py-10 mx-auto bg-[#070022] text-white">
+    <section className="px-4 md:px-24 pt-10 pb-20 mx-auto bg-[#070022] text-white">
       <h1 className="text-3xl md:text-5xl font-bold mb-8 text-center text-[#C4E15A]">More About Naadi Astrology</h1>
 
       <div className="space-y-10">

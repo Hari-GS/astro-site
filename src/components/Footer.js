@@ -40,12 +40,12 @@ function Footer({setIsPopupOpen}) {
               </button>
             </li>
             <li>
+              <Link to="/more-about" className="hover:text-gray-400">Learn More</Link>
+            </li>
+            <li>
               <button className="hover:text-gray-400" onClick={() => setIsPopupOpen(true)}>
                 Book You Session
               </button>
-            </li>
-            <li>
-              <Link to="/more-about" className="hover:text-gray-400">Learn More</Link>
             </li>
           </ul>
         </div>

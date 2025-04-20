@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import Tool from './components/Tool';
 import ContactPopup from './components/ContactPopup';
 import MoreAbout from './components/MoreAbout';
+import Footer from './components/Footer';
 
 function App() {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
@@ -31,6 +32,7 @@ function App() {
                 <Tool/>
                 <Navbar setIsPopupOpen={setIsPopupOpen} />
                 <MoreAbout/>
+                <Footer setIsPopupOpen={setIsPopupOpen}/>
                 <ContactPopup isOpen={isPopupOpen} onClose={() => setIsPopupOpen(false)} />
             </div>
             }/>
