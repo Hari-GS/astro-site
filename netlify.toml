@@ -1,2 +1,11 @@
 [functions]
-  directory = "netlify/functions"
+  node_bundler = "esbuild"
+
+[functions."server"]
+  external_node_modules = ["busboy", "nodemailer"]
+
+[dev]
+  command = "npm run dev"
+  targetPort = 3000
+  port = 8888
+  publish = "dist"
