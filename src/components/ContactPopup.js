@@ -75,7 +75,7 @@ const ContactPopup = ({ isOpen, onClose }) => {
     }
 
     try {
-      const res = await fetch("http://localhost:5000/send-email", {
+      const res = await fetch("/.netlify/functions/server", {
         method: "POST",
         body: data,
       });
