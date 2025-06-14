@@ -1,5 +1,5 @@
 import React from "react";
-import sageImage from "../assets/dummy-prod-1.jpg"; // Replace with your actual image path
+import sageImage from "../assets/profile-image.jpg"; // Replace with your actual image path
 import sign1 from "../assets/Icons/image-1.png";
 import sign2 from "../assets/Icons/image-2.png";
 import sign3 from "../assets/Icons/image-3.png";
